@@ -15,7 +15,7 @@ class UserSettings extends Component {
       }
       if (typeof auth === 'object') {
         let placeholder = 'http://via.placeholder.com/220x220';
-        let userAvatar = auth.avatar.replace('sz=50', 'sz=220');
+        let userAvatar = auth.avatar ?  auth.avatar.replace('sz=50', 'sz=220') : '';
         return (
           <div className="container">
             <div className="row mb-4 justify-content-between">

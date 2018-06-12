@@ -35,7 +35,7 @@ class Navbar extends Component {
       return (
         <div className="align-middle">
           <Dropdown overlay={menu} placement="bottomLeft" trigger={['click']}>
-            {auth.avatar.length > 0 ? (
+            {auth.avatar ? (
               <Avatar src={auth.avatar} size="large" />
             ) : (
               <Avatar size="large" style={{ backgroundColor: '#26b2a4' }}>
