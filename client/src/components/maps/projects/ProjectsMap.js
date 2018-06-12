@@ -100,7 +100,6 @@ class ProjectsMap extends Component {
   }
   render() {
     const { viewport, settings } = this.state;
-    console.log(this.props.posts.items.length);
     return (
       <div>
         <MapGL
